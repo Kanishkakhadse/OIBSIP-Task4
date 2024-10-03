@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Login Form -->
+        <div class="glass-card" id="loginForm">
+            <h2>Login</h2>
+            <div class="input-box">
+                <input type="text" id="username" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <button class="login-btn" id="loginBtn">Login</button>
+            <p id="error-message"></p>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+
+        <!-- Register Form -->
+        <div class="glass-card" id="registerForm" style="display:none;">
+            <h2>Create Account</h2>
+            <div class="input-box">
+                <input type="text" id="newUsername" required>
+                <label for="newUsername">Username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="newPassword" required>
+                <label for="newPassword">Password</label>
+            </div>
+            <button class="login-btn" id="registerBtn">Register</button>
+            <p id="register-message"></p>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </div>
+
+        <!-- Secured Page -->
+        <div class="glass-card" id="securedPage" style="display:none;">
+            <h2>Welcome to the Secured Page</h2>
+            <p>You have successfully logged in!</p>
+            <button class="login-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+</html>
